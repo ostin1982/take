@@ -1,0 +1,76 @@
+@import 'components';
+
+.prices {
+    padding: 73px 95px 61px 95px;
+
+    &__block {
+        padding: 50px 0 0 0;
+    }
+
+    &__accordion {
+        margin-bottom: 35px;
+        background: $back-not-main;
+        border: 1px solid $color;
+        border-radius: 20px;
+    }
+
+    &__button {
+        background: $back-not-main;
+        border: 1px solid #ffffff00;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: $major;
+        line-height: 31px;
+    }
+
+    &__table {
+        padding: 12px 45px 19px 8px;
+    }
+
+    &__text {
+        font-size: $large;
+        line-height: 28px;
+        margin: 0;
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .prices {
+        padding: 100px 32px;
+
+        &__accordion {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .prices {
+        padding: 30px 20px;
+
+        &__accordion {
+            margin-bottom: 22px;
+        }
+
+        &__button {
+            font-size: $main;
+            line-height: 21px;
+        }
+
+        &__table {
+            padding: 0px 10px 23px 10px;
+        }
+
+        &__text {
+            font-size: $small;
+            line-height: 19px;
+        }
+    }
+}

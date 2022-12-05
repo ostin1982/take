@@ -1,0 +1,35 @@
+@import 'components';
+
+.button {
+    background: $color;
+    border-radius: 10px;
+    padding: 19px 63px;
+    border: 1px solid $color;
+    font-size: $big;
+    line-height: 24px;
+
+    &:hover {
+        background: $hover;
+    }
+
+    &:active {
+        background: $color;
+    }
+
+    &__area {
+        padding: 18px 51px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button {
+        padding: 11px 40px;
+        font-size: $small;
+        line-height: 19px;
+
+        &__area {
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
+}

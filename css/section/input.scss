@@ -1,0 +1,53 @@
+@import 'components';
+
+.input {
+    border: 1px solid $border;
+    border-radius: 10px;
+    padding: 21px 18px;
+
+    &::placeholder {
+        font-size: $small;
+        line-height: 19px;
+        color: $placeholder;
+    }
+
+    &:focus {
+        border: 1px solid $color;
+        outline:none;
+    }
+
+    &_name {
+        width: 150px;
+    }
+
+    &__area {
+        border-radius: 20px;
+        padding: 18px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .input {
+        &__area {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .input {
+        padding: 13px 8px;
+        margin-bottom: 26px;
+
+        &_name {
+            width: 100%;
+        }
+
+        &__area {
+            background: $input;
+            margin-bottom: 14px;
+        }
+    }
+}

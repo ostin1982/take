@@ -1,0 +1,65 @@
+@import 'components';
+
+.footer {
+    background: $dark;
+    padding: 120px 0;
+
+    &__block {
+        width: 520px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: $large;
+        line-height: 28px;
+        text-align: center;
+        color: rgba(123, 123, 123, 0.54);
+    }
+
+    &__link {
+        padding-top: 34px;
+        font-weight: 500;
+        font-size: $great;
+        line-height: 26px;
+        text-align: center;
+        color: rgba(218, 218, 218, 0.54);
+
+        &:hover {
+            color: rgba(218, 218, 218, 0.54);
+        }
+    }
+}
+
+@media screen and (max-width: 967px) {
+    .footer {
+        padding: 200px 0 120px 0;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .footer {
+        padding: 240px 0 120px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 82px 18px;
+
+        &__block {
+            width: auto;
+        }
+
+        &__text {
+            font-size: $little;
+            line-height: 16px;
+        }
+
+        &__link {
+            padding-top: 6px;
+            font-size: $little;
+            line-height: 19px;
+        }
+    }
+}

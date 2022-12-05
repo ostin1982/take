@@ -1,0 +1,123 @@
+@import 'components';
+
+.promo {
+    padding: 61px 95px 60px 95px;
+
+    &__block {
+        background: $back-not-main;
+        box-shadow: 0px 0px 14px 3px rgba(33, 33, 33, 0.06);
+        border-radius: 20px;
+        margin: 50px 0 0 0;
+    }
+
+    &__advertisement {
+        padding: 77px 0 145px 72px;
+    }
+
+    &__color {
+        color: $color;
+    }
+
+    &__text {
+        padding: 51px 0 0 0;
+        font-size: $large;
+        line-height: 28px;
+    }
+
+    &__picture {
+        position: relative;
+        height: 100%;
+    }
+
+    &__img {
+        position: absolute;
+        top: -84px;
+        right: 63px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .promo {
+        &__img {
+            top: -56px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .promo {
+        padding: 64px 32px 0 32px;
+
+        &__img {
+            right: 0;
+            top: -84px;
+        }
+    }
+}
+
+@media screen and (max-width: 1002px) {
+    .promo {
+        &__img {
+            top: -56px;
+        }
+    }
+}
+
+@media screen and (max-width: 866px) {
+    .promo {
+        &__img {
+            top: -28px;
+        }
+    }
+}
+
+@media screen and (max-width: 822px) {
+    .promo {
+        &__img {
+            top: 7px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .promo {
+        padding: 30px 20px 0 20px;
+
+        &__block {
+            height: 406px;
+            margin: 30px 0 0 0;
+        }
+
+        &__advertisement {
+            padding: 30px 18px 0 18px;
+        }
+
+        &__text {
+            padding: 9px 0 0 0;
+            font-size: $main;
+            line-height: 21px;
+            text-align: center;
+        }
+
+        &__img {
+            top: 33px;
+            left: calc((100vw - 207px)/2);
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .promo {
+        &__img {
+            top: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .promo {
+        &__img {
+            top: -8px;
+        }
+    }
+}

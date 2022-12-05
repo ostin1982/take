@@ -1,0 +1,122 @@
+/*font*/
+/*color*/
+/*custom on bootstrap*/
+.accordion {
+  --bs-accordion-border-radius: 20px;
+  --bs-accordion-inner-border-radius: 20px;
+  --bs-accordion-btn-focus-border-color: $color;
+  --bs-accordion-active-color: $black;
+  --bs-accordion-active-bg: $back-not-main;
+  --bs-border-color: $back-not-main;
+  --bs-accordion-btn-icon: url("../../img/arrow-down.png");
+  --bs-accordion-btn-active-icon: url("../../img/arrow-cross.png");
+  --bs-accordion-btn-padding-y: 30px;
+  --bs-accordion-btn-padding-x: 15px;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #FFC800;
+}
+
+.accordion-button::after {
+  width: 44px;
+  height: 44px;
+  background-size: 44px 44px;
+  margin-right: 30px;
+}
+.accordion-button:focus {
+  border: none;
+}
+
+.modal {
+  --bs-modal-header-border-width: 0;
+  --bs-modal-header-border-color: $back-not-main;
+  --bs-modal-border-radius: 30px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .accordion-button::after {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+    margin-right: 0;
+  }
+  .accordion {
+    --bs-accordion-btn-padding-y: 23px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.input {
+  border: 1px solid #D6D6D6;
+  border-radius: 10px;
+  padding: 21px 18px;
+}
+.input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #CBCBCB;
+}
+.input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #CBCBCB;
+}
+.input::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #CBCBCB;
+}
+.input:focus {
+  border: 1px solid #FFC800;
+  outline: none;
+}
+.input_name {
+  width: 150px;
+}
+.input__area {
+  border-radius: 20px;
+  padding: 18px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .input__area {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .input {
+    padding: 13px 8px;
+    margin-bottom: 26px;
+  }
+  .input_name {
+    width: 100%;
+  }
+  .input__area {
+    background: #F8F8F8;
+    margin-bottom: 14px;
+  }
+}/*# sourceMappingURL=input.css.map */

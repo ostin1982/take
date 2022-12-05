@@ -1,0 +1,121 @@
+@import 'components';
+
+.advantages {
+    padding: 120px 94px;
+
+    &__block {
+        padding-top: 50px;
+    }
+
+    &__card {
+        padding: 16px;
+        background-color: $back-not-main;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+        border-radius: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.8s;
+
+        &:hover {
+            background-color: $color;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 14px 3px rgba(33, 33, 33, 0.06);
+        }
+
+        &:hover .advantages__body {
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFFFFFFF' stroke-width='1' stroke-dasharray='24%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        }
+
+        &:hover .advantages__number {
+            color: $back-not-main;
+        }
+    }
+
+    &__body {
+        position: relative;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFC800FF' stroke-width='1' stroke-dasharray='24%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        border-radius: 10px;
+        padding: 34px 0 64px 0;
+        text-align: center;
+        height: 180px;
+    }
+
+    &__title {
+        position: relative;
+        color: $dark;
+        font-weight: 500;
+        font-size: $large;
+        line-height: 28px;
+        z-index: 10;
+    }
+
+    &__subtitle {
+        position: relative;
+        padding-top: 12px;
+        color: $dark;
+        font-size: $main;
+        line-height: 21px;
+        z-index: 10;
+    }
+
+    &__number {
+        position: absolute;
+        right: -12px;
+        bottom: -70px;
+        color: $color-pale;
+        font-weight: 300;
+        font-size: $gigantic;
+        line-height: 190px;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .advantages {
+        padding: 100px 32px;
+
+        &__body {
+            padding: 41px 0 67px 0;
+        }
+
+        &__title {
+            font-size: $great;
+            line-height: 26px;
+        }
+
+        &__subtitle {
+            font-size: $small;
+            line-height: 19px;
+            padding-top: 10px;
+        }
+
+        &__number {
+            font-size: $huge;
+            line-height: 180px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .advantages {
+        padding: 0 20px 50px 20px;
+
+        &__block {
+            padding-top: 30px;
+        }
+
+        &__body {
+            padding: 18px 0 4px 0;
+            height: auto;
+        }
+
+        &__subtitle {
+            padding-top: 12px;
+        }
+
+        &__number {
+            font-size: $tremendous;
+            line-height: 207px;
+        }
+    }
+}

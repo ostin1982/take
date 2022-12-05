@@ -1,0 +1,171 @@
+/*font*/
+/*color*/
+/*custom on bootstrap*/
+.accordion {
+  --bs-accordion-border-radius: 20px;
+  --bs-accordion-inner-border-radius: 20px;
+  --bs-accordion-btn-focus-border-color: $color;
+  --bs-accordion-active-color: $black;
+  --bs-accordion-active-bg: $back-not-main;
+  --bs-border-color: $back-not-main;
+  --bs-accordion-btn-icon: url("../../img/arrow-down.png");
+  --bs-accordion-btn-active-icon: url("../../img/arrow-cross.png");
+  --bs-accordion-btn-padding-y: 30px;
+  --bs-accordion-btn-padding-x: 15px;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #FFC800;
+}
+
+.accordion-button::after {
+  width: 44px;
+  height: 44px;
+  background-size: 44px 44px;
+  margin-right: 30px;
+}
+.accordion-button:focus {
+  border: none;
+}
+
+.modal {
+  --bs-modal-header-border-width: 0;
+  --bs-modal-header-border-color: $back-not-main;
+  --bs-modal-border-radius: 30px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .accordion-button::after {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+    margin-right: 0;
+  }
+  .accordion {
+    --bs-accordion-btn-padding-y: 23px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.advantages {
+  padding: 120px 94px;
+}
+.advantages__block {
+  padding-top: 50px;
+}
+.advantages__card {
+  padding: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.advantages__card:hover {
+  background-color: #FFC800;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 14px 3px rgba(33, 33, 33, 0.06);
+}
+.advantages__card:hover .advantages__body {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFFFFFFF' stroke-width='1' stroke-dasharray='24%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.advantages__card:hover .advantages__number {
+  color: #FFFFFF;
+}
+.advantages__body {
+  position: relative;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFC800FF' stroke-width='1' stroke-dasharray='24%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 10px;
+  padding: 34px 0 64px 0;
+  text-align: center;
+  height: 180px;
+}
+.advantages__title {
+  position: relative;
+  color: #000000;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  z-index: 10;
+}
+.advantages__subtitle {
+  position: relative;
+  padding-top: 12px;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  z-index: 10;
+}
+.advantages__number {
+  position: absolute;
+  right: -12px;
+  bottom: -70px;
+  color: #FFFCCB;
+  font-weight: 300;
+  font-size: 162px;
+  line-height: 190px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1199px) {
+  .advantages {
+    padding: 100px 32px;
+  }
+  .advantages__body {
+    padding: 41px 0 67px 0;
+  }
+  .advantages__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .advantages__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 10px;
+  }
+  .advantages__number {
+    font-size: 153px;
+    line-height: 180px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .advantages {
+    padding: 0 20px 50px 20px;
+  }
+  .advantages__block {
+    padding-top: 30px;
+  }
+  .advantages__body {
+    padding: 18px 0 4px 0;
+    height: auto;
+  }
+  .advantages__subtitle {
+    padding-top: 12px;
+  }
+  .advantages__number {
+    font-size: 176px;
+    line-height: 207px;
+  }
+}/*# sourceMappingURL=advantages.css.map */

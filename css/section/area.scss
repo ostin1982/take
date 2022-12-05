@@ -1,0 +1,237 @@
+@import 'components';
+
+.area {
+    padding: 60px 0 55px 0;
+
+    &__heading {
+        padding-left: 95px;
+    }
+
+    &__map {
+        position: relative;
+        max-height: 768px;
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        margin: 70px 0 0 0;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        cursor: pointer;
+        transition: 0.8s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__info {
+        position: absolute;
+        background: $back-not-main;
+        box-shadow: 0px 0px 14px 3px rgba(33, 33, 33, 0.06);
+        border-radius: 20px;
+        top: -79px;
+        right: 93px;
+        padding: 25px;
+    }
+
+    &__block {
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFC800FF' stroke-width='4' stroke-dasharray='20%2c 20' stroke-dashoffset='1' stroke-linecap='square'/%3e%3c/svg%3e");
+        border-radius: 10px;
+        padding: 59px 38px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: $large;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        padding: 20px 0 0 0;
+        font-size: $big;
+        line-height: 23px;
+        text-align: center;
+    }
+
+    &__form {
+        width: 466px;
+        padding: 48px 0 79px 0;
+    }
+
+    &__text {
+        font-size: $little;
+        line-height: 16px;
+        color: $data;
+        padding-left: 22px;
+    }
+
+    &__link {
+        color: $color;
+    }
+
+    &__phone {
+        font-weight: 500;
+        font-size: $major;
+        line-height: 31px;
+        color: $black;
+        text-align: left;
+        text-decoration: none;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    &__social {
+        padding: 30px 0;
+    }
+
+    &__icon {
+        text-decoration: none;
+        margin-right: 24px;
+    }
+
+    &__address {
+        font-weight: 500;
+        font-size: $major;
+        line-height: 31px;
+        text-align: left;
+    }
+
+    &__time {
+        font-weight: 500;
+        font-size: $great;
+        line-height: 26px;
+        color: rgba(138, 138, 138, 0.54);
+        padding-top: 26px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .area {
+        padding: 100px 0 36px 0;
+
+        &__heading {
+            padding-left: 32px;
+        }
+
+        &__info {
+            right: 0;
+            padding: 20px;
+        }
+
+        &__block {
+            padding: 31px;
+        }
+
+        &__subtitle {
+            padding: 18px 0 0 0;
+        }
+
+        &__form {
+            padding: 31px 0 40px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .area {
+        padding: 33px 0 616px 0;
+
+        &__heading {
+            padding-left: 0;
+        }
+
+        &__info {
+            right: 5vw;
+            padding: 12px;
+            top: 230px;
+        }
+
+        &__block {
+            padding: 36px 7px 22px 7px;
+        }
+
+        &__title {
+            font-size: $main;
+            line-height: 21px;
+        }
+
+        &__subtitle {
+            padding: 0;
+            font-size: $small;
+            line-height: 19px;
+        }
+
+        &__form {
+            padding: 14px 61px;
+            width: 80vw;
+        }
+
+        &__text {
+            text-align: center;
+            padding-top: 14px;
+            font-size: $tiny;
+            line-height: 14px;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__phone {
+            font-size: $main;
+            line-height: 21px;
+            text-align: center;
+        }
+
+        &__social {
+            padding: 21px 0 14px 0;
+        }
+
+        &__icon {
+            margin-right: 16px;
+        }
+
+        &__address {
+            font-size: $main;
+            line-height: 21px;
+            text-align: center;
+        }
+
+        &__time {
+            font-size: $main;
+            line-height: 21px;
+            padding-top: 14px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .area {
+        padding: 33px 0 700px 0;
+
+        &__info {
+            right: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .area {
+        padding: 33px 0 770px 0;
+        
+        &__info {
+            right: 2px;
+        }
+    }
+}

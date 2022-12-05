@@ -1,0 +1,132 @@
+/*font*/
+/*color*/
+/*custom on bootstrap*/
+.accordion {
+  --bs-accordion-border-radius: 20px;
+  --bs-accordion-inner-border-radius: 20px;
+  --bs-accordion-btn-focus-border-color: $color;
+  --bs-accordion-active-color: $black;
+  --bs-accordion-active-bg: $back-not-main;
+  --bs-border-color: $back-not-main;
+  --bs-accordion-btn-icon: url("../../img/arrow-down.png");
+  --bs-accordion-btn-active-icon: url("../../img/arrow-cross.png");
+  --bs-accordion-btn-padding-y: 30px;
+  --bs-accordion-btn-padding-x: 15px;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #FFC800;
+}
+
+.accordion-button::after {
+  width: 44px;
+  height: 44px;
+  background-size: 44px 44px;
+  margin-right: 30px;
+}
+.accordion-button:focus {
+  border: none;
+}
+
+.modal {
+  --bs-modal-header-border-width: 0;
+  --bs-modal-header-border-color: $back-not-main;
+  --bs-modal-border-radius: 30px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .accordion-button::after {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+    margin-right: 0;
+  }
+  .accordion {
+    --bs-accordion-btn-padding-y: 23px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.prices {
+  padding: 73px 95px 61px 95px;
+}
+.prices__block {
+  padding: 50px 0 0 0;
+}
+.prices__accordion {
+  margin-bottom: 35px;
+  background: #FFFFFF;
+  border: 1px solid #FFC800;
+  border-radius: 20px;
+}
+.prices__button {
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+}
+.prices__table {
+  padding: 12px 45px 19px 8px;
+}
+.prices__text {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  color: #131313;
+  text-decoration: none;
+}
+.prices__text:hover {
+  color: #131313;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .prices {
+    padding: 100px 32px;
+  }
+  .prices__accordion {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .prices {
+    padding: 30px 20px;
+  }
+  .prices__accordion {
+    margin-bottom: 22px;
+  }
+  .prices__button {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .prices__table {
+    padding: 0px 10px 23px 10px;
+  }
+  .prices__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}/*# sourceMappingURL=prices.css.map */
