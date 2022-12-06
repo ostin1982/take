@@ -23,6 +23,9 @@
 .prices__table {
   padding: 12px 45px 19px 8px;
 }
+.prices__hover:hover .prices__text {
+  color: #FFC800;
+}
 .prices__text {
   font-size: 24px;
   line-height: 28px;

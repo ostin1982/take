@@ -27,6 +27,12 @@
         padding: 12px 45px 19px 8px;
     }
 
+    &__hover {
+        &:hover .prices__text {
+            color: $color;
+        }
+    }
+
     &__text {
         font-size: $large;
         line-height: 28px;
