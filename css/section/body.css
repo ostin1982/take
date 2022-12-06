@@ -5,4 +5,6 @@ body {
   font-family: "Raleway", sans-serif;
   color: #131313;
   background-color: #FAFAFA;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
 }/*# sourceMappingURL=body.css.map */

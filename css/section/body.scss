@@ -5,4 +5,6 @@ body {
     font-family: 'Raleway', sans-serif;
     color: $black;
     background-color: $back-main;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: 'lnum';
 }
