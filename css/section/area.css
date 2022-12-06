@@ -137,17 +137,17 @@
     line-height: 21px;
   }
   .area__subtitle {
-    padding: 0;
+    padding: 10px 0 0 0;
     font-size: 16px;
     line-height: 19px;
   }
   .area__form {
-    padding: 14px 61px;
+    padding: 14px 40px;
     width: 80vw;
   }
   .area__text {
     text-align: center;
-    padding-top: 14px;
+    padding: 14px 0 0 0;
     font-size: 12px;
     line-height: 14px;
   }

@@ -163,19 +163,19 @@
         }
 
         &__subtitle {
-            padding: 0;
+            padding: 10px 0 0 0;
             font-size: $small;
             line-height: 19px;
         }
 
         &__form {
-            padding: 14px 61px;
+            padding: 14px 40px;
             width: 80vw;
         }
 
         &__text {
             text-align: center;
-            padding-top: 14px;
+            padding: 14px 0 0 0;
             font-size: $tiny;
             line-height: 14px;
         }

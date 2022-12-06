@@ -61,4 +61,10 @@
     font-size: 16px;
     line-height: 19px;
   }
+}
+@media screen and (max-width: 376px) {
+  .prices__text {
+    width: 100px;
+    text-align: right;
+  }
 }/*# sourceMappingURL=prices.css.map */

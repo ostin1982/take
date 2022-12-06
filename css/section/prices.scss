@@ -74,3 +74,12 @@
         }
     }
 }
+
+@media screen and (max-width: 376px) {
+    .prices {
+        &__text {
+            width: 100px;
+            text-align: right;
+        }
+    }
+}

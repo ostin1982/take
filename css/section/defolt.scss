@@ -12,18 +12,21 @@ h1 {
     font-weight: 600;
     font-size: $h1;
     line-height: 47px;
+    margin: 0;
 }
 
 h2 {
     font-weight: 600;
     font-size: $h2;
     line-height: 40px;
+    margin: 0;
 }
 
 h3 {
     font-weight: 500;
     font-size: $h3;
     line-height: 35px;
+    margin: 0;
 }
 
 p {
@@ -31,32 +34,6 @@ p {
     font-size: $main;
     line-height: 21px;
     margin: 0;
-}
-
-@media screen and (max-width: 1199px) {
-    h2 {
-        font-size: $considerable;
-        line-height: 33px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    h1 {
-        font-size: $great;
-        line-height: 26px;
-    }
-
-    h2 {
-        font-size: $great;
-        line-height: 26px;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: $great;
-        line-height: 26px;
-        text-align: center;
-    }
 }
 
 /*custom on bootstrap*/
@@ -67,11 +44,16 @@ p {
     --bs-accordion-active-color: $black;
     --bs-accordion-active-bg: $back-not-main;
     --bs-border-color: $back-not-main;
-    --bs-accordion-btn-icon: url('../img/arrow-down.png');
-    --bs-accordion-btn-active-icon: url('../img/arrow-cross.png');
-    --bs-accordion-btn-padding-y: 30px;
+    --bs-accordion-btn-icon: url('../img/arrow-down.svg');
+    --bs-accordion-btn-active-icon: url('../img/arrow-cross.svg');
+    --bs-accordion-btn-padding-y: 23px;
     --bs-accordion-btn-padding-x: 15px;
     --bs-accordion-btn-focus-box-shadow: none;
+
+    &:hover {
+        --bs-accordion-btn-icon: url('../img/arrow-down-hover.svg');
+        --bs-accordion-btn-active-icon: url('../img/arrow-cross-hover.svg');
+    }
 }
 
 .accordion-item:not(:first-of-type) {
@@ -91,6 +73,11 @@ p {
     }
 }
 
+.accordion-button::after:hover {
+    opacity: 0.8;
+}
+
+
 .modal {
     --bs-modal-header-border-width: 0;
     --bs-modal-header-border-color: $back-not-main;
@@ -99,6 +86,11 @@ p {
 }
 
 @media (max-width: 1199px) {
+    h2 {
+        font-size: $considerable;
+        line-height: 33px;
+    }
+
     .container {
         max-width: 100%;
         padding: 0;
@@ -113,6 +105,23 @@ p {
 }
 
 @media (max-width: 767px) {
+    h1 {
+        font-size: $great;
+        line-height: 26px;
+    }
+
+    h2 {
+        font-size: $great;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: $great;
+        line-height: 26px;
+        text-align: center;
+    }
+
     .container {
         max-width: 100%;
         padding: 0;

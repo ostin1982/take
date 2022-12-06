@@ -19,7 +19,9 @@
 }
 .header__link:hover {
   color: #131313;
-  text-decoration: none;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FFC800;
+          text-decoration-color: #FFC800;
 }
 .header__phone {
   display: none;
