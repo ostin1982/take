@@ -17,6 +17,9 @@
 .button__area {
   padding: 18px 51px;
 }
+.button__popup {
+  width: 100%;
+}
 
 @media screen and (max-width: 767px) {
   .button {

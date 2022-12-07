@@ -33,7 +33,7 @@
         background: $back-not-main;
         box-shadow: 0px 0px 14px 3px rgba(33, 33, 33, 0.06);
         border-radius: 20px;
-        top: -79px;
+        top: -40px;
         right: 93px;
         padding: 25px;
     }
@@ -87,20 +87,12 @@
         }
     }
 
-    &__social {
-        padding: 30px 0;
-    }
-
-    &__icon {
-        text-decoration: none;
-        margin-right: 24px;
-    }
-
     &__address {
         font-weight: 500;
         font-size: $major;
         line-height: 31px;
         text-align: left;
+        padding-top: 28px;
     }
 
     &__time {
@@ -122,6 +114,7 @@
 
         &__info {
             right: 0;
+            top: -12px;
             padding: 20px;
         }
 
@@ -136,12 +129,16 @@
         &__form {
             padding: 31px 0 40px 0;
         }
+
+        &__address {
+            padding-top: 21px;
+        }
     }
 }
 
 @media screen and (max-width: 767px) {
     .area {
-        padding: 33px 0 616px 0;
+        padding: 33px 0 526px 0;
 
         &__heading {
             padding-left: 0;
@@ -205,6 +202,7 @@
             font-size: $main;
             line-height: 21px;
             text-align: center;
+            padding-top: 14px;
         }
 
         &__time {
@@ -222,13 +220,14 @@
 
         &__info {
             right: 13px;
+            top: 180px;
         }
     }
 }
 
 @media screen and (max-width: 380px) {
     .area {
-        padding: 33px 0 770px 0;
+        padding: 33px 0 640px 0;
         
         &__info {
             right: 2px;

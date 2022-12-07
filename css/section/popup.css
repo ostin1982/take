@@ -29,6 +29,7 @@
   border-radius: 30px;
   width: 469px;
   height: 320px;
+  z-index: 200;
 }
 .popup__round {
   padding-bottom: 25px;
@@ -51,6 +52,42 @@
   line-height: 24px;
   text-align: center;
   padding-top: 10px;
+}
+.popup__border {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFC800FF' stroke-width='4' stroke-dasharray='18%2c 20' stroke-dashoffset='19' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 10px;
+  padding: 50px;
+}
+.popup__close {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+.popup__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.popup__subtitle {
+  padding-top: 16px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+.popup__form {
+  padding: 30px 0 15px 0;
+}
+.popup__wording {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+.popup__link {
+  color: #FFC800;
+}
+.popup__link:hover {
+  color: #FFD43D;
 }
 
 @media screen and (max-width: 767px) {

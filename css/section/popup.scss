@@ -30,6 +30,7 @@
         border-radius: 30px;
         width: 469px;
         height: 320px;
+        z-index: 200;
     }
 
     &__round {
@@ -51,12 +52,55 @@
         text-align: center;
     }
 
-
     &__text {
         font-size: $big;
         line-height: 24px;
         text-align: center;
         padding-top: 10px;
+    }
+
+    &__border {
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFC800FF' stroke-width='4' stroke-dasharray='18%2c 20' stroke-dashoffset='19' stroke-linecap='square'/%3e%3c/svg%3e");
+        border-radius: 10px;
+        padding: 50px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 35px;
+        right: 35px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: $large;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        padding-top: 16px;
+        font-size: $big;
+        line-height: 23px;
+        text-align: center;
+    }
+
+    &__form {
+        padding: 30px 0 15px 0;
+    }
+
+    &__wording {
+        font-size: $little;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    &__link {
+        color: $color;
+
+        &:hover {
+            color: $hover;
+        }
     }
 }
 

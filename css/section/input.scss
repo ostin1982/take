@@ -17,11 +17,18 @@
     }
 
     &_name {
-        width: 150px;
+        width: 220px;
     }
 
     &__area {
         border-radius: 20px;
+        padding: 18px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__popup {
+        border-radius: 10px;
         padding: 18px;
         width: 100%;
         margin-bottom: 30px;

@@ -25,10 +25,16 @@
   outline: none;
 }
 .input_name {
-  width: 150px;
+  width: 220px;
 }
 .input__area {
   border-radius: 20px;
+  padding: 18px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.input__popup {
+  border-radius: 10px;
   padding: 18px;
   width: 100%;
   margin-bottom: 30px;

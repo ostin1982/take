@@ -21,7 +21,7 @@
   line-height: 31px;
 }
 .prices__table {
-  padding: 12px 45px 19px 8px;
+  padding: 12px 15px 19px 15px;
 }
 .prices__hover:hover .prices__text {
   color: #FFC800;

@@ -47,7 +47,7 @@ p {
   --bs-accordion-btn-icon: url("../img/arrow-down.svg");
   --bs-accordion-btn-active-icon: url("../img/arrow-cross.svg");
   --bs-accordion-btn-padding-y: 23px;
-  --bs-accordion-btn-padding-x: 15px;
+  --bs-accordion-btn-padding-x: 23px;
   --bs-accordion-btn-focus-box-shadow: none;
 }
 .accordion:hover {
@@ -63,7 +63,6 @@ p {
   width: 44px;
   height: 44px;
   background-size: 44px 44px;
-  margin-right: 30px;
 }
 .accordion-button:focus {
   border: none;
@@ -76,7 +75,14 @@ p {
 .modal {
   --bs-modal-header-border-width: 0;
   --bs-modal-header-border-color: $back-not-main;
-  --bs-modal-border-radius: 30px;
+  --bs-modal-border-radius: 20px;
+  --bs-modal-header-padding: 25px;
+}
+
+.btn-close {
+  background: url("../../img/cross-small.png") no-repeat center;
+  width: 9px;
+  height: 9px;
 }
 
 @media (max-width: 1199px) {
