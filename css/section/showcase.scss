@@ -90,7 +90,7 @@
         }
 
         &__form {
-            padding: 16px 27px 35px 27px;
+            padding: 26px;
             width: 418px;
             bottom: -660px;
             left: calc((100vw - 418px)/2);
@@ -117,7 +117,7 @@
 @media screen and (max-width: 511px) {
     .showcase {
         &__form {
-            padding: 16px 27px 35px 27px;
+            padding: 20px;
             width: 218px;
             bottom: -490px;
             left: calc((100vw - 218px)/2);
